@@ -18,20 +18,12 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
 
-    ## init
     - name: Makemigrations
       run: python manage.py makemigrations
 
     - name: Migrate
       run: python manage.py migrate
-    ## end
-        
+
     - name: Executando Testes
       run: |
         python manage.py test
-
-    # init
-    - name: Run project
-      run: |
-        python manage.py runserver   
-    # end

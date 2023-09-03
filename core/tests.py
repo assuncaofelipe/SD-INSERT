@@ -4,5 +4,6 @@ import unittest
 class HelloWorldTestCase(unittest.TestCase):
 
     def test_hello_world(self):
-        print("\nManutenção e Integração - Aluá P&D\n")
+        print("\n\nManutenção e Integração - Aluá P&D")
+        print("\nBranch pronta para ser mergeada\n")
         assert True
