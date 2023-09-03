@@ -17,6 +17,14 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install -r requirements.txt
+
+    ## init
+    - name: migrations
+      run: |
+        python manage.py makemigrations
+        python manage.py migrate
+    ## end
+        
     - name: Test with Django
       run: |
         python manage.py test
